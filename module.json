@@ -1,0 +1,41 @@
+{
+  "id": "compass-for-sequencer",
+  "title": "Compass for Sequencer",
+  "description": "This module let you simulate a Ouija Board for your players.",
+
+  "authors": [{
+    "name": "Mestre Digital",
+    "url": "https://youtube.com/mestredigital"
+  }],
+  
+  "flags": {},
+  
+  "version": "0.0.1",
+  
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11"
+  },
+  
+  "esmodules": ["/scripts/init.js"],
+  "styles": [],
+  "languages": [],
+
+  "packs": [ 
+  ],
+  
+  "relationships": {
+    "requires": [{
+      "id": "sequencer",
+      "type": "module",
+      "manifest": "https://github.com/Haxxer/FoundryVTT-Sequencer/releases/latest/download/module.json"
+    }]
+  },
+  
+  "socket": false,
+ 
+  "url": "https://github.com/brunocalado/compass-for-sequencer", 
+  "manifest": "https://raw.githubusercontent.com/brunocalado/compass-for-sequencer/main/module.json",
+  "download": "https://codeload.github.com/brunocalado/compass-for-sequencer/zip/main"
+
+}

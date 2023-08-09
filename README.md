@@ -1,5 +1,5 @@
-# Ouija Board for Sequencer
-This module let you simulate a Ouija Board for your players.
+# Compass for Sequencer
+This module let you simulate a Compass for your players.
 
 ## Demonstration
 [![Demonstration](assets/guide/video-thumbnail.webp)](https://youtu.be/bOmA8z9-R-o)

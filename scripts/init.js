@@ -1,7 +1,7 @@
 const moduleName = 'compass-for-sequencer';
-import {Compass} from './compass.mjs'
+import {Compass} from './compass.js'
 
-setup
+
 //Hooks.once('init', () => {
 Hooks.once('setup', () => {
   // --------------------------------------------------

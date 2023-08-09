@@ -27,11 +27,8 @@ There is a compendium with journals with instructions. Read it!
 You can check changes at [CHANGELOG](CHANGELOG.md)
 
 # License
-- Sound: https://99sounds.org/license/
-- Image: https://pixabay.com/service/license/
-- Designer: Matheus Moreno Mota
+- compass_01.webp, pointer_black.webp, pointer_green.webp by Filho do Chocobo
 - Code: [LICENSE](LICENSE)
-- TollTheDeadSkullSmoke_01_Regular_Grey_400x400 -> https://www.patreon.com/JB2A
 
 # Mestre Digital
 About this module creator: https://sites.google.com/view/mestredigitalmodules

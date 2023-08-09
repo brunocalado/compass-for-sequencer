@@ -17,11 +17,8 @@ There is a compendium with journals with instructions. Read it!
 
 # Acknowledges
 - Cefas, GURPS and CSS guy.
-- Erich Matos Viegas
-- Matheus Moreno Mota, half man, half capyvara
+- @mouse0270  
 - @Wasp#2005 - https://github.com/fantasycalendar/FoundryVTT-Sequencer
-- https://github.com/RebelMage
-- https://github.com/KenGitsIt
 
 # Changelog
 You can check changes at [CHANGELOG](CHANGELOG.md)

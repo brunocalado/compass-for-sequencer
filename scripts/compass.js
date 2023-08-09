@@ -67,7 +67,7 @@ export class Compass {
 
     await sequence.play();
     
-    let sequence = new Sequence()
+    sequence = new Sequence()
       .animation()
           .on(tokenD)
           .rotateIn(angle, 2500, {ease: "easeOutCubic"})    // .rotateIn(degrees, duration, options)

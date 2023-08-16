@@ -10,7 +10,7 @@
   
   "flags": {},
   
-  "version": "0.0.1",
+  "version": "0.0.2",
   
   "compatibility": {
     "minimum": 11,
@@ -25,6 +25,24 @@
   "languages": [],
 
   "packs": [ 
+    {
+      "label": "Macros - Compass for Sequencer",
+      "type": "Macro",
+      "name": "macros-compass-for-sequencer",
+      "path": "packs/macros-compass-for-sequencer"
+    },
+    {
+      "label": "Scenes - Compass for Sequencer",
+      "type": "Scene",
+      "name": "scenes-compass-for-sequencer",
+      "path": "packs/scenes-compass-for-sequencer"
+    },
+    {
+      "label": "Journals - Compass for Sequencer",
+      "type": "JournalEntry",
+      "name": "journals-compass-for-sequencer",
+      "path": "packs/journals-compass-for-sequencer"
+    }    
   ],
   
   "relationships": {

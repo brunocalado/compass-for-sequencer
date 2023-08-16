@@ -1,0 +1,8 @@
+2023/08/16-16:36:30.255 4048 Recovering log #22
+2023/08/16-16:36:30.263 4048 Delete type=0 #22
+2023/08/16-16:36:30.263 4048 Delete type=3 #20
+2023/08/16-16:40:02.236 f74 Level-0 table #27: started
+2023/08/16-16:40:02.237 f74 Level-0 table #27: 0 bytes OK
+2023/08/16-16:40:02.239 f74 Delete type=0 #25
+2023/08/16-16:40:02.241 f74 Manual compaction at level-0 from '!scenes!1LkTpuhCS02bbYrc' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at (end)
+2023/08/16-16:40:02.244 f74 Manual compaction at level-1 from '!scenes!1LkTpuhCS02bbYrc' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at (end)

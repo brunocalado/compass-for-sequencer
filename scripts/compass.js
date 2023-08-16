@@ -37,7 +37,8 @@ export class Compass {
         cancel: {
           label: "Cancel",
         }
-      }
+      },
+      default: 'ok', // Define o botão "Move" como o botão padrão
     }).render(true);
   }
 
@@ -48,24 +49,74 @@ export class Compass {
   }
 
   /* ---------------------------------------------
-  // movePattern1: 
+  // movePattern1: simple movement
     const compass = game.modules.get('compass-for-sequencer')?.api.compass;
-    compass.movePattern1(position, extraTime);
+    compass.movePattern1(angle);
   */
   static async movePattern1(angle) {    
+      
+    // get current angle: pointer_token.document.rotation
+    const targetAngle = parseInt(angle);
+    
+    if (true) { // DEBUG
+      const startingAngle = pointer_token.document.rotation;
+      console.log('=====================================');
+      console.log('angle:' + angle);
+      console.log('angle:' + `${parseInt(angle)-50}` );
+      console.log('startingAngle:' + startingAngle);
+      console.log('=====================================');
+    }
+
+    // Rotate 
+    // randomInt(min, max)
+    const easingOne = {ease: "easeInSine"};
+    const easingTwo = {};
+    const easingThree = {ease: "easeOutSine"};     
+    new Sequence()
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle-50-this.randomInt(1, 10), 1500, easingOne)    // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()    
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle+50+this.randomInt(1, 10), 1500, easingOne)    // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle-30-this.randomInt(1, 10), 1000, easingTwo)    // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle+30+this.randomInt(1, 10), 1000, easingTwo)    // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle-10-this.randomInt(1, 10), 500, easingThree)    // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle+10+this.randomInt(1, 10), 500, easingThree)    // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()
+      .animation()
+        .on(pointer_token)
+        .rotateIn(angle, 500, easingThree)       // .rotateIn(degrees, duration, options)
+        .waitUntilFinished()           
+      .play();
+  
+  }
+
+  /* ---------------------------------------------
+  // movePattern2: simple movement with shake at the end
+    const compass = game.modules.get('compass-for-sequencer')?.api.compass;
+    compass.movePattern2(angle);
+  */
+  static async movePattern2(angle) {    
       
     // get current angle: pointer_token.document.rotation
     const currentAngle = pointer_token.document.rotation;
     const secondAngle = this.recalcuteAngle(currentAngle, 359);
     const thirdAngle = this.recalcuteAngle(secondAngle, 180);
-    
-    console.log('====================')
-    console.log('====================')
-    console.log('====================')
-    console.log(currentAngle)
-    console.log(secondAngle)
-    console.log(thirdAngle)
-    
+
     let sequence = new Sequence()
       .animation()
         .on(pointer_token)
@@ -89,6 +140,10 @@ export class Compass {
   static recalcuteAngle(angle, newAngleToAdd) {
     const newAngle = (angle + newAngleToAdd) % 360;
     return newAngle >= 0 ? newAngle : newAngle + 360;
+  }
+
+  static randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
 } // CLASS END

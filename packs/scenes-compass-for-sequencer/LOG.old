@@ -1,8 +1,15 @@
-2023/08/16-17:09:53.667 1c60 Recovering log #26
-2023/08/16-17:09:53.675 1c60 Delete type=0 #26
-2023/08/16-17:09:53.676 1c60 Delete type=3 #24
-2023/08/16-17:14:45.811 f74 Level-0 table #31: started
-2023/08/16-17:14:45.812 f74 Level-0 table #31: 0 bytes OK
-2023/08/16-17:14:45.815 f74 Delete type=0 #29
-2023/08/16-17:14:45.815 f74 Manual compaction at level-0 from '!scenes!1LkTpuhCS02bbYrc' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at (end)
-2023/08/16-17:14:45.815 f74 Manual compaction at level-1 from '!scenes!1LkTpuhCS02bbYrc' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at (end)
+2023/08/17-11:25:00.874 2640 Recovering log #30
+2023/08/17-11:25:00.884 2640 Delete type=0 #30
+2023/08/17-11:25:00.884 2640 Delete type=3 #28
+2023/08/17-11:30:19.617 5360 Level-0 table #35: started
+2023/08/17-11:30:19.618 5360 Level-0 table #35: 3616 bytes OK
+2023/08/17-11:30:19.620 5360 Delete type=0 #33
+2023/08/17-11:30:19.625 5360 Manual compaction at level-0 from '!scenes!1LkTpuhCS02bbYrc' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at (end)
+2023/08/17-11:30:19.625 5360 Manual compaction at level-1 from '!scenes!1LkTpuhCS02bbYrc' @ 72057594037927935 : 1 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 14 : 0
+2023/08/17-11:30:19.625 5360 Compacting 1@1 + 1@2 files
+2023/08/17-11:30:19.628 5360 Generated table #36@1: 13 keys, 3465 bytes
+2023/08/17-11:30:19.628 5360 Compacted 1@1 + 1@2 files => 3465 bytes
+2023/08/17-11:30:19.630 5360 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/08/17-11:30:19.630 5360 Delete type=2 #19
+2023/08/17-11:30:19.630 5360 Delete type=2 #35
+2023/08/17-11:30:19.635 5360 Manual compaction at level-1 from '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 14 : 0 .. '!scenes.tokens.delta!1LkTpuhCS02bbYrc.lmJV6kKGenEuipbh.foUfaqCdYaw68WsL' @ 0 : 0; will stop at (end)

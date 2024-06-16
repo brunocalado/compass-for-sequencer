@@ -10,11 +10,11 @@
   
   "flags": {},
   
-  "version": "0.0.5",
+  "version": "0.0.6",
   
   "compatibility": {
     "minimum": 11,
-    "verified": "11"
+    "verified": "12"
   },
   
   "esmodules": [
@@ -43,6 +43,20 @@
       "name": "journals-compass-for-sequencer",
       "path": "packs/journals-compass-for-sequencer"
     }    
+  ],
+
+  "packFolders": [
+    {
+      "name": "Compass for Sequencer",
+      "sorting": "a",
+      "color": "#9f1d1d",
+      "packs": [
+        "macros-compass-for-sequencer",
+        "scenes-compass-for-sequencer",
+        "journals-compass-for-sequencer"
+      ],
+      "folders": []
+    }
   ],
   
   "relationships": {
